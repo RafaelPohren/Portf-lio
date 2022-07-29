@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    
+  <!--Metadados-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Rafael da Silva Pohren">
     <meta name="description" content="Portfólio do desenvolvedor front-end Rafael da Silva Pohren">
     <meta name="keywords" content="portfolio, html, front-end, desenvolvimento, css, javascript">
+   
+    <!--Link do CSS-->
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/menu-mobile.css">
+    
+    <!--Titulo da pagina-->
     <title>Rafael Pohren</title>
 </head>
 <body>
     <header>
+   
+      <!--Sigla do meu nome RP-->
     <nav data-menu="suave">
         <p><a href="#home">&lsaquo;RP/&rsaquo;</a></p>
         <button data-menu="button" aria-controls="menu"></button>
+   
+        <!--Menu de navegação-->
         <ul data-menu="list" id="menu">
             <a href="#home">
             <li>Home</li>
@@ -33,6 +43,7 @@
     </nav>
     </header>
     
+    <!--Principal-->
     <main>
     <section class="principal" id="home">
         <div class="principal_left">
@@ -66,6 +77,8 @@
             </a>
     </div>
     </section>
+
+    <!--Sobre Mim-->
     <section class="sobre-mim" id="sobre" data-anime="js-scroll">
         <div class="sobre-mim_foto">
             <img src="/assets/geek.png" alt="Geek"/>
@@ -88,8 +101,11 @@
             </div>
         </div>
     </section>
+    
+    <!--Habilidades-->
+   
 
-    <!--Projetos em andamento-->
+    <!--Projetos-->
     <section class="projetos" id="projetos" data-anime="js-scroll">
         <h1>Projetos</h1>
         <div class="projetos_wrapper">
@@ -169,17 +185,21 @@
                 Visualizar
               </div>
             </a>
-   
-          </section>
+            </section>
         </div>
       </section>
-      <div class="rodape">
+
+      <!--Rodapé-->
+    <div class="rodape">
       <footer>
         <p>Desenvolvido por <span class="cor">Rafael Pohren</span></p><a href="https://www.linkedin.com/in/rafaelpohren/" target="_blank">LinkedIn</a>
       </footer>
     </div>
 </main>
+
+<!--Script do JS-->
 <script src="./js/script.js" type="module"></script>
 <script src="./js/modules/vanilla-tilt.min.js"></script>
+
 </body>
 </html>

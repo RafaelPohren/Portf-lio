@@ -116,13 +116,13 @@ nav ul li::after {
     text-decoration: none;
     color: white;
   }
-  
+/*Tela principal*/
   .principal {
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: relative;
-    min-height: 60vh;
+    min-height: 74vh;
   }
   
   .principal .scroll{
@@ -344,6 +344,7 @@ nav ul li::after {
 .sobre-mim {
   display: flex;
   justify-content: space-around;
+  min-height: 80vh;
 }
 
 .sobre-mim_descricao {
@@ -907,3 +908,4 @@ button:hover {
     max-width: 300px;
   }
 }
+
