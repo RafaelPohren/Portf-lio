@@ -122,7 +122,7 @@ nav ul li::after {
     justify-content: space-around;
     align-items: center;
     position: relative;
-    min-height: 74vh;
+    min-height: 75vh;
   }
   
   .principal .scroll{
@@ -344,7 +344,7 @@ nav ul li::after {
 .sobre-mim {
   display: flex;
   justify-content: space-around;
-  min-height: 80vh;
+  min-height: 50vh;
 }
 
 .sobre-mim_descricao {
@@ -818,7 +818,6 @@ nav ul li::after {
  
 button {
   padding: 10px 100px;
-  border-radius: 25px;
   cursor: pointer;
   color: white;
   background-color: #121212;
@@ -909,3 +908,89 @@ button:hover {
   }
 }
 
+/*Habilidades*/
+label {
+  margin-left: 50%;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  display: block;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+  z-index: 20;
+}
+
+  .card div {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: #151515;
+      text-align:unset;
+      line-height: 40px;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border-radius: 2px;
+      
+  }
+
+  .card .back {
+      background: #121212;
+      color: #ffffff;
+      -webkit-transform: rotateX(180deg);
+      transform: rotateX(180deg);
+      
+  }
+
+label:hover .card {
+  -webkit-transform: rotateX(20deg);
+  transform: rotateX(20deg);
+  box-shadow: 0 20px 20px rgba(0, 137, 250, 0.2);
+}
+
+input {
+  display: none;
+}
+
+:checked + .card {
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+}
+
+label:hover :checked + .card {
+  transform: rotateX(160deg);
+  -webkit-transform: rotateX(160deg);
+  box-shadow: 0 20px 20px rgba(0, 137, 250, 0.2);
+}
+
+.habilidades-img{
+  
+  height: 150px;
+}
+
+.habilidades{
+  text-align:center;
+  margin: 0 auto;
+  background-color: #151515;
+}
+.bloco{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 37px;
+  
+}
